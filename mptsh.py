@@ -5,7 +5,7 @@
 # https://github.com/cs127/mptsh-python
 #
 #
-# version 0.0.0 (port of Java version 0.2.1)
+# version 0.0.0 (port of Java version 0.2.2)
 # 2022-11-23
 #
 #
