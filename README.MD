@@ -9,6 +9,8 @@ This program adds syntax highlighting to your clipboard (using ANSI color codes)
 
 The main purpose of this program is to paste syntax-highlighted OpenMPT pattern data in [Discord](https://discord.com), using `ansi` Markdown code blocks.
 
+**Requires Python 3.10 or newer!**
+
 ## Demo
 
 Discord screenshot, showing a section of an OpenMPT pattern, with and without syntax highlighting.
