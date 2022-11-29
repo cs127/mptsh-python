@@ -5,8 +5,8 @@
 # https://github.com/cs127/mptsh-python
 #
 #
-# version 0.0.0 (port of Java version 0.2.3)
-# 2022-11-24
+# version 0.0.1 (port of Java version 0.2.4)
+# 2022-11-29
 #
 #
 # Requirements:
@@ -31,13 +31,13 @@ HELP_TEXT = '''
 Usage: [EXEC] [OPTIONS] [COLORS]
 
 Options:
--h | --help         Help (display this screen)
--i | --stdin        Read input from STDIN instead of clipboard
--o | --stdout       Write output to STDOUT instead of clipboard
--d | --markdown     Automatically wrap output in Markdown code block (for Discord)
--r | --reverse      Reverse mode - removes syntax highlighting instead of adding
+-h | --help       Help (display this screen)
+-i | --stdin      Read input from STDIN instead of clipboard
+-o | --stdout     Write output to STDOUT instead of clipboard
+-d | --markdown   Wrap output in Markdown code block (for Discord)
+-r | --reverse    Reverse mode (removes syntax highlighting instead of adding)
 
-Using auto-markdown does nothing if reverse mode is enabled.
+Using markdown does nothing if reverse mode is enabled.
 
 Colors:
 X,X,X,X,X,X,X,X  Each value from 0 to 15 (Discord only supports 0 to 7)
@@ -117,7 +117,6 @@ colors_arg_index = 1
 while colors_arg_index < len(sys.argv):
     if not sys.argv[colors_arg_index].startswith('-'): break
     colors_arg_index += 1
-    if sys.argv[colors_arg_index-1] == '--': break
 
 # Get command-line options
 options = get_cli_options(sys.argv[:colors_arg_index])
