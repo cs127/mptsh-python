@@ -2,6 +2,7 @@
 
 * [Java version](https://github.com/cs127/mptsh-java)
 * Python version
+* [C++ version](https://github.com/cs127/mptsh-cpp)
 
 ## Info
 
