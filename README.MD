@@ -27,7 +27,6 @@ Options:
 * `-o` or `--stdout`: Write output to STDOUT instead of clipboard
 * `-d` or `--markdown`: Wrap output in `ansi` Markdown code block (for Discord)
 * `-r` or `--reverse`: Reverse mode (removes syntax highlighting instead of adding)
-* `--`: End of options (next argument is treated as list of colors)
 
 Using `-d` (`--markdown`) does nothing if `-r` (`--reverse`) is also enabled.
 
